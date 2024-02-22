@@ -45,7 +45,7 @@ if(isset($_POST["signIn"]) ) {
      <title>Sign In || Member</title>
      <link rel="icon" href="../../assets/logoh.png" type="image/png">
     </head>
-  <body style="background: url(../../assets/bg.jpg) fixed; ">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed; ">
   <div class="container">
     <div class="card p-2 mt-5">
       <div class="position-absolute top-0 start-50 translate-middle">

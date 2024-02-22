@@ -24,7 +24,7 @@ $admin = queryReadData("SELECT * FROM admin WHERE id=$id");
      <link rel="icon" href="../../assets/logoh.png" type="image/png">
      <title>Update || petugas</title>
     </head>
-  <body style="background: url(../../assets/bg.jpg);">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed;">
   <div class="container">
     <div class="card p-2 mt-5">
       <h1 class="pt-5 text-center fw-bold">Tambah Petugas</h1>
@@ -67,7 +67,7 @@ $admin = queryReadData("SELECT * FROM admin WHERE id=$id");
   <div class="input-group mt-0">
     <span class="input-group-text" id="basic-addon1"></span>
     <select class="form-select" id="" name="role">
-        <option value="<?= $item["role"]; ?>"><?= $item["role "]; ?></option>
+        <option value="<?= $item["role"]; ?>"><?= $item["role"]; ?></option>
         <option value="admin">admin</option>
         <option value="petugas">petugas</option>
     </select>

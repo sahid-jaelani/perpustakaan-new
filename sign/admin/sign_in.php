@@ -41,7 +41,7 @@ if (isset($_POST["signIn"])) {
      <link rel="icon" href="../../assets/logoh.png" type="image/png">
      <title>Sign In || Admin</title>
     </head>
-  <body style="background: url(../../assets/bg.jpg);"><br><br><br>
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed;"><br><br><br>
   <div class="container">
     <div class="card p-2 mt-5">
       <div class="position-absolute top-0 start-50 translate-middle">

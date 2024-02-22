@@ -33,7 +33,7 @@ foreach ($dataPinjam as $item) {
      <link rel="icon" href="../../assets/logoh.png" type="image/png">
 </head>
   </head>
-  <body style="background: url(../../assets/bg.jpg) fixed; ">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed; ">
      <nav class="navbar fixed-top ">
       <div class="container-fluid" style="background-color: black; ">
         <a class="navbar-brand" href="#">

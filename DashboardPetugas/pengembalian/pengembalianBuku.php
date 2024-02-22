@@ -17,7 +17,7 @@ INNER JOIN admin ON pengembalian.id_admin = admin.id")
      <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
      <title>Kelola pengembalian buku || admin</title>
   </head>
-  <body style="background: url(../../assets/bg.jpg) fixed;">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed;">
     
     <nav class="navbar fixed-top" >
       <div class="container-fluid" style=" background: black;">

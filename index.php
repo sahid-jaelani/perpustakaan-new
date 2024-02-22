@@ -8,7 +8,7 @@
     <title>E-perpus.eo</title>
     <link rel="icon" href="assets/logoh.png" type="image/png">
   </head>
-  <body style="background: url(assets/bg.jpg) fixed; ">
+  <body style="background: url(assets/bg.jpg) center / cover fixed; ">
     <!--Navbar-->
    <nav class="navbar fixed-top navbar-expand-lg justify-space-between" >
   <div class="container-fluid" style="background-color: rgb(114, 114, 114);">

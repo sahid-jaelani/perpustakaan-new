@@ -52,7 +52,7 @@ $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'sains'");
       gap: 1.5rem;
     }
   </style>
-  <body style="background: url(../../assets/bg.jpg) fixed; ">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed; ">
     <nav class="navbar fixed-top ">
       <div class="container-fluid" style="background-color: black; ">
         <a class="navbar-brand" href="#">

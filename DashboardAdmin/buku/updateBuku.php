@@ -36,7 +36,7 @@ if(isset($_POST["update"]) ) {
      <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
      <title>Edit data buku || Admin</title>
   </head>
-  <body style="background: url(../../assets/bg.jpg) fixed; ">
+  <body style="background: url(../../assets/bg.jpg) center / cover fixed; ">
     <nav class="navbar fixed-top navbar-expand-lg ">
   <div class="container-fluid" style="background: black;">
     <a class="navbar-brand" href="#">
