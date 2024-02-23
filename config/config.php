@@ -293,7 +293,7 @@
       return 0;
     }
     
-    $queryPinjam = "INSERT INTO peminjaman(id_peminjaman, id_buku, nisn, id_admin, tgl_peminjaman, tgl_pengembalian,status) VALUES ('', '$idBuku', $nisn, $idAdmin, '$tgl_peminjaman', '$tgl_pengembalian','tidak')";
+    $queryPinjam = "INSERT INTO peminjaman(id_peminjaman, id_buku, nisn, id_admin, tgl_peminjaman, tgl_pengembalian,status) VALUES ('', '$idBuku', $nisn, $idAdmin, '$tgl_peminjaman', '$tgl_pengembalian','TIDAK')";
     mysqli_query($connection, $queryPinjam);
     return mysqli_affected_rows($connection);
   }
@@ -366,7 +366,7 @@
       if ($tgl == $tgl_pengembalian) {
 
 
-        $pengembalian = "INSERT INTO pengembalian(id_pengembalian, id_peminjaman, id_buku, nisn, id_admin, buku_kembali, keterlambatan) VALUES ('',$id_peminjaman,'$id_buku',$nisn,$id_admin,$tgl_pengembalian,'TIDAK')";
+        $pengembalian = "INSERT INTO pengembalian(id_pengembalian, id_peminjaman, id_buku, nisn, id_admin, buku_kembali, keterlambatan) VALUES ('',$id_peminjaman,'$id_buku',$nisn,$id_admin,$tgl_pengembalian,'tidak')";
         $peminjaman = "DELETE FROM peminjaman WHERE nisn=$nisn";
         mysqli_query($connection, $pengembalian);
         mysqli_query($connection, $peminjaman);

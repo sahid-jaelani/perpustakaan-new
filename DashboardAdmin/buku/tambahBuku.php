@@ -70,7 +70,7 @@ if(isset($_POST["tambah"]) ) {
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Id Buku</label>
-          <input type="text" class="form-control" name="id_buku" id="exampleFormControlInput1" placeholder="example inf01" required>
+          <input type="text" class="form-control" name="id_buku" id="exampleFormControlInput1" placeholder="example ZID01" required>
         </div>
       </div>
     

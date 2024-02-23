@@ -18,7 +18,7 @@ if(isset($_POST["kembalikan"]) ) {
   
   if(pengembalian($_POST) > 0) {
     echo "<script>
-    alert('Terimakasih telah mengembalikan buku!');
+    alert('Terimakasih telah mengembalikan buku!');window.location='TransaksiPeminjaman.php';
     </script>";
   }else 
     echo "<script>
@@ -37,14 +37,14 @@ if(isset($_POST["kembalikan"]) ) {
      <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
      <title>Form Pengembalian Buku || Member</title>
   </head>
-  <body>
-    <nav class="navbar fixed-top bg-body-tertiary shadow-sm">
-      <div class="container-fluid p-3">
+  <body style="background: url(../../assets/bg.jpg);">
+    <nav class="navbar fixed-top  ">
+      <div class="container-fluid" style="background-color: black;">
         <a class="navbar-brand" href="#">
-          <img src="../../assets/logoNav.png" alt="logo" width="120px">
+          <img src="../../assets/logoNav.png" alt="logo" width="220px">
         </a>
         
-        <a class="btn btn-tertiary" href="../dashboardMember.php">Dashboard</a>
+        <a class="btn btn-tertiary" href="../dashboardMember.php" style="color: white;">Dashboard</a>
       </div>
     </nav>
     

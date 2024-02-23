@@ -15,11 +15,7 @@ INNER JOIN admin ON peminjaman.id_admin = admin.id
 WHERE peminjaman.nisn = $akunMember");
 
 
-foreach ($dataPinjam as $item) {
-  if ($item['status'] == 'tidak') {
-     $dataPinjam = false;
-  }
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -46,12 +42,7 @@ foreach ($dataPinjam as $item) {
     
   <div class="p-4 mt-5">
     <div class="mt-5 alert alert-primary" role="alert">Riwayat transaksi Peminjaman Buku Anda - <span class="fw-bold text-capitalize"><?php echo htmlentities($_SESSION["member"]["nama"]); ?></span></div>
-    
-    <?php if ($dataPinjam == false) { ?>
-      <div class="alert alert-secondary" role="alert">
-         Buku tidak tersedia!
-      </div>
-      <?php } else { ?>
+      
       <div class="table-responsive mt-3">
          <table class="table table-striped table-hover">
             <thead class="text-center">
@@ -79,14 +70,18 @@ foreach ($dataPinjam as $item) {
                <td><?= $item["tgl_peminjaman"]; ?></td>
                <td><?= $item["tgl_pengembalian"]; ?></td>
                <td>
-                  <a class="btn btn-success" href="bacabuku.php?id=<?= $item["id_buku"]; ?>"> Baca Buku</a>
+               <?php if ($item["status"] == 'ya') : ?>
+                    <a class="btn btn-primary"href="bacabuku.php?id=<?= $item["id_buku"]; ?>"> Baca Buku</a>
+                    <a class="btn btn-danger" href="pengembalianBuku.php?id=<?= $item["id_peminjaman"]; ?>">kembalikan</a>
+                  <?php elseif ($item["status"] == 'tidak') : ?>
+                    <button disabled class="btn btn-warning">Tunggu Konfirmasi</button>
+                  <?php endif; ?>
                </td>
                <?php endforeach; ?>
             </tr>
          </table>
       </div>
    </div>
-   <?php } ?>
 
   </body>
   
